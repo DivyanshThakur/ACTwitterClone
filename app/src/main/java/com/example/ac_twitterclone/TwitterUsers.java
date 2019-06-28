@@ -113,6 +113,9 @@ try {
                     }
                 });
                 break;
+            case R.id.tweetUserItem :
+                Intent intent =  new Intent(TwitterUsers.this, SendTweetActivity.class);
+                startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
