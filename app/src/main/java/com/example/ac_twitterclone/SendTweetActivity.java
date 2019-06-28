@@ -37,7 +37,7 @@ public class SendTweetActivity extends AppCompatActivity {
         parseObject.put("username", ParseUser.getCurrentUser().getUsername());
 
         // showing the progress dialog
-        ProgressDialog dialog = new ProgressDialog(SendTweetActivity.this);
+        final ProgressDialog dialog = new ProgressDialog(SendTweetActivity.this);
         dialog.setMessage("Loading...");
         dialog.show();
 
@@ -50,6 +50,7 @@ public class SendTweetActivity extends AppCompatActivity {
                 } else {
                     Toasty.error(SendTweetActivity.this,"Error : " + e.getMessage(),Toasty.LENGTH_LONG,true).show();
                 }
+                dialog.dismiss();
             }
         });
 
