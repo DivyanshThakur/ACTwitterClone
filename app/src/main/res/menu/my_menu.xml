@@ -4,6 +4,10 @@
     <item android:id="@+id/logoutUserItem"
         android:title="Logout"
         android:orderInCategory="100"
-        app:showAsAction="always"
-        />
+        app:showAsAction="always" />
+    <item android:id="@+id/tweetUserItem"
+        android:title="Tweet"
+        android:orderInCategory="100"
+        android:icon="@drawable/send"
+        app:showAsAction="always"/>
 </menu>

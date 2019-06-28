@@ -39,6 +39,8 @@ public class TwitterUsers extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter_users);
 
+        setTitle("Twitter Clone");
+
         // ui initializing
         listView = findViewById(R.id.listView);
         followedUser = "";
