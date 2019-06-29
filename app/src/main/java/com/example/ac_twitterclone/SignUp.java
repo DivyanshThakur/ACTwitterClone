@@ -106,7 +106,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 
                 Intent intent = new Intent(SignUp.this,LogIn.class);
                 startActivity(intent);
-                finish();
                 break;
         }
     }

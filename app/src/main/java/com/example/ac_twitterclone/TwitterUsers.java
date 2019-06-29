@@ -72,9 +72,9 @@ try {
 
                         if (ParseUser.getCurrentUser().getList("fanOf") != null) {
                             if (ParseUser.getCurrentUser().getList("fanOf").contains(twitterUser)) {
-                                followedUser += twitterUser + "\n";
+                                followedUser += "\n" + twitterUser;
                                 listView.setItemChecked(tusers.indexOf(twitterUser), true);
-                                Toasty.info(TwitterUsers.this,ParseUser.getCurrentUser().getUsername() + " is following : \n" + followedUser,Toasty.LENGTH_LONG,true).show();
+                                Toasty.info(TwitterUsers.this,ParseUser.getCurrentUser().getUsername() + " is following :" + followedUser,Toasty.LENGTH_LONG,true).show();
                             }
                         }
                     }

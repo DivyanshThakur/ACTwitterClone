@@ -115,5 +115,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
         Intent intent = new Intent(LogIn.this,TwitterUsers.class);
         startActivity(intent);
         finish();
+
+
     }
 }
